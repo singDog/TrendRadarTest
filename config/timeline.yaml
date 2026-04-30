@@ -1,6 +1,6 @@
 custom:
   name: "自定义"
-  description: "早上8点、中午11点、晚上17点各推送一次"
+  description: "早上8点、中午12点、晚上18点各推送一次"
 
   default:
     collect: true
@@ -21,14 +21,14 @@ custom:
       report_mode: "daily"
     noon:
       name: "午间推送"
-      start: "11:00"
-      end: "12:00"
+      start: "12:00"
+      end: "13:00"
       push: true
       report_mode: "current"
     evening:
       name: "晚间推送"
-      start: "17:00"
-      end: "18:00"
+      start: "18:00"
+      end: "19:00"
       push: true
       report_mode: "daily"
 

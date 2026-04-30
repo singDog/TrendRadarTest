@@ -1,6 +1,6 @@
 custom:
   name: "自定义"
-  description: "早上8点、晚上16点各推送一次"
+  description: "早上8点、中午11点、晚上17点各推送一次"
 
   default:
     collect: true
@@ -19,16 +19,22 @@ custom:
       end: "09:00"
       push: true
       report_mode: "daily"
+    noon:
+      name: "午间推送"
+      start: "11:00"
+      end: "12:00"
+      push: true
+      report_mode: "current"
     evening:
       name: "晚间推送"
-      start: "16:00"
-      end: "17:00"
+      start: "17:00"
+      end: "18:00"
       push: true
       report_mode: "daily"
 
   day_plans:
     all_day:
-      periods: ["morning", "evening"]
+      periods: ["morning", "noon", "evening"]
 
   week_map:
     1: "all_day"
@@ -41,4 +47,3 @@ custom:
 
   overlap:
     policy: "error_on_overlap"
-

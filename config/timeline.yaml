@@ -1,6 +1,6 @@
 custom:
   name: "自定义"
-  description: "早上6点、中午12点、晚上7点各推送一次"
+  description: "早上8点、晚上16点各推送一次"
 
   default:
     collect: true
